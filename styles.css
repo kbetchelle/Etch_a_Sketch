@@ -1,0 +1,55 @@
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 25pt;
+    background-color: #b80F0A;
+    padding: 10px 20px 20px;
+    margin: 10px 150px 20px;
+}
+
+body {
+    background-color: wheat;
+}
+
+#sizeInput { 
+    background-color: #b80F0A;
+    color: #F9F295;
+    border-color: #F9F295;
+    padding: 5px;   
+    margin-bottom: 10px;
+}
+
+#gridContainer {
+    height: 500px;
+    width: 500px;
+    background-color: ghostwhite;
+}
+
+#head{
+    display: flex;
+    justify-content: space-around;
+    color:#F9F295;
+    font-family: cursive;
+    margin-bottom: 0px;
+    width: 400px;
+    height: 50px;
+    align-items: center;
+
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+   
+#roundButtons {
+    background-color: antiquewhite;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin-top: 30px;
+}
+/*add the background image of an etch-a-sketch with red boarder and gold writting*/
