@@ -10,19 +10,21 @@ gridSizePrompt.addEventListener('click', () => {
 });
 
 
-function makeGrid (num) {
+function makeGrid (sizeSelected) {
     if (bigDiv.hasChildNodes()) {
-        bigDiv.removeChild(bigDiv.childNodes[0])
+        bigDiv.removeChild(bigDiv.childNodes[0]);
     }
-    for (i=0; i < num; i ++) {
-        const littleDiv = document.createElement("div")
-        littleDiv.classList.add("littleDiv")
-        bigDiv.appendChild(littleDiv)
+    for (i=0; i < sizeSelected; i ++) {
+        const divRow = document.createElement("div");
+        divRow.classList.add("divRow");
+        bigDiv.appendChild(divRow);
 
-        for (i = 0; i < num; i++){
-            let littleDivWidth = 500/(num)
-            littleDiv.style.width = littleDivWidth
-            littleDiv.style.height = littleDivWidth
+        for (i = 0; i < sizeSelected; i++){
+            let littleDivWidth = 550/parseInt(sizeSelected)
+            littleDiv = document.createElement("div");
+            littleDiv.style.width = littleDivWidth;
+            littleDiv.style.height = littleDivWidth;
+            divRow.appendChild(littleDiv);
         }
     }
 

@@ -25,14 +25,14 @@ body {
 }
 
 #gridContainer {
-    height: 500px;
-    width: 500px;
+    height: 550px;
+    width: 550px;
     background-color: ghostwhite;
 }
 
 #head{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color:#F9F295;
     font-family: cursive;
     margin-bottom: 0px;
