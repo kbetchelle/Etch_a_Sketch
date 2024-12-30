@@ -30,7 +30,6 @@ body {
     background-color: ghostwhite;
     display: flex;
     flex-direction: column;
-    padding: 0;
 }
 
 #head{
@@ -71,7 +70,7 @@ p {
 }
 
 .littleDiv {
-    border: gray, solid, 1pt;
+    border: #D3D3D3, solid, 1pt;
     display: flex;
     flex-grow: 1;
 }

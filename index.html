@@ -17,9 +17,10 @@
         <button id="sizeInput">Change Size</button>
         <div id="gridContainer"></div>
         <div id="buttons">
-            <button id="roundButtons">Gray</button>
-            <button id="roundButtons">Rainbow</button>
-            <button id="roundButtons">Reset</button>
+            <button id="roundButtons" onclick="changeColor('gray')">Gray</button>
+            <button id="roundButtons" onclick="changeColor('random')">Rainbow</button>
+            <button id="roundButtons" onclick="changeColor('ghostwhite')">Erase</button>
+            <button id="roundButtons" onclick="resetContainer()">Clear</button>
         </div>
     </div>
     <p>created by <b>Kat Green</b></p>

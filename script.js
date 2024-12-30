@@ -12,16 +12,13 @@ function makeGrid (sizeSelected) {
         bigDiv.appendChild(divRow);
 
         for (let i = 0; i < sizeSelected; i++){
-            /*let containerSize = bigDiv.offsetHeight;
-            let littleDivWidth = 551/parseInt(sizeSelected);*/
             littleDiv = document.createElement("div");
             littleDiv.classList.add('littleDiv')
-            /*littleDiv.style.width = littleDivWidth;
-            littleDiv.style.height = littleDivWidth;*/
             divRow.appendChild(littleDiv);
+            littleDiv.addEventListener("mouseover", colorSquare);
         }
-    }
-}
+    };    
+};
 
 function getGridSize () {
     let sizeSelected = prompt("Enter a number between 1-100: ");
@@ -38,12 +35,23 @@ function getGridSize () {
     }
 };
 
+makeGrid(16);
 gridSizePrompt.addEventListener('click', getGridSize);
 
+//ADDING HOVER ELEMENT & COLOR FUNCTIONALITY 
 
-//ADDING HOVER ELEMENTS 
-const randColor = () => {
-    return "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase();
+function colorSquare() {
+    color === "random" ? this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)` : this.style.backgroundColor = color;
+  }
+
+function changeColor(choice) {
+    color = choice
 }
 
-console.log(randColor());
+let color = 'gray'
+
+function resetContainer() {
+    let container = document.querySelector("#gridContainer");
+    let squares = container.querySelectorAll("div");
+    squares.forEach((div) => (div.style.backgroundColor = "#f8f8ff"));
+  }
