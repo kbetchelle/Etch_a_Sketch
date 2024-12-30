@@ -62,7 +62,14 @@ p {
     justify-self: center;
 }
 
+.divRow {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
 .littleDiv {
     border: gray, solid, 1pt;
+    flex-grow: 1;
 
 }
