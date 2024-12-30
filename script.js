@@ -12,12 +12,12 @@ function makeGrid (sizeSelected) {
         bigDiv.appendChild(divRow);
 
         for (let i = 0; i < sizeSelected; i++){
-            let containerSize = bigDiv.height;
-            let littleDivWidth = containerSize/parseInt(sizeSelected);
+            /*let containerSize = bigDiv.offsetHeight;
+            let littleDivWidth = 551/parseInt(sizeSelected);*/
             littleDiv = document.createElement("div");
             littleDiv.classList.add('littleDiv')
-            littleDiv.style.width = littleDivWidth;
-            littleDiv.style.height = littleDivWidth;
+            /*littleDiv.style.width = littleDivWidth;
+            littleDiv.style.height = littleDivWidth;*/
             divRow.appendChild(littleDiv);
         }
     }

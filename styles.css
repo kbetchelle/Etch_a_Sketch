@@ -28,6 +28,9 @@ body {
     height: 550px;
     width: 550px;
     background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
 #head{
@@ -65,11 +68,10 @@ p {
 .divRow {
     display: flex;
     flex-grow: 1;
-    justify-content: space-between;
 }
 
 .littleDiv {
     border: gray, solid, 1pt;
+    display: flex;
     flex-grow: 1;
-
 }
